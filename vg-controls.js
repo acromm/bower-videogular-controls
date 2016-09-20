@@ -52,7 +52,8 @@ angular.module("com.2fdevs.videogular.plugins.controls", [])
                 var hideInterval;
 
                 scope.API = API;
-
+                API.showControls = scope.showControls;
+                API.hideControls = scope.hideControls;
                 scope.onMouseMove = function onMouseMove() {
                     if (scope.vgAutohide) scope.showControls();
                 };
